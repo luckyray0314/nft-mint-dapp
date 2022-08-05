@@ -1,0 +1,238 @@
+/* 
+body,
+html {
+  height: 100vh;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-repeat: no-repeat;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  background: url(../img/mint-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+
+button {
+    background-color: transparent;
+    background-image: none;
+    cursor: pointer;
+    text-transform: none;
+}
+
+header {
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+header img {
+    width: 100%;
+    object-fit: cover;
+}
+
+header .logo {
+    width: 280px;
+}
+
+header .mint-btn {
+    color: #e7e9ff;
+    background: url(../img/Vector.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 168px;
+    font-weight: 700;
+    height: 60px;
+    position: absolute;
+    right: 60px;
+    border-style: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    max-width: 320px;
+}
+
+header .mint-btn:hover {
+    color: rgba(231, 233, 255, 0.2);
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+
+.mint-page {
+    /* height: 100%; */
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    background-repeat: no-repeat;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background: url(../img/mint-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mint-page .mint-page-panel {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: -moz-fit-content;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(60, 60, 68, 0.74) 0%, rgba(23, 23, 24, 0.38) 90.52%);
+    -webkit-backdrop-filter: blur(80px);
+    backdrop-filter: blur(80px);
+    -webkit-clip-path: polygon(0 14px, 0 100%, 96.7% 100%, 100% 97.8%, 100% 0, 14px 0);
+    clip-path: polygon(0 14px, 0 100%, 96.7% 100%, 100% 97.8%, 100% 0, 14px 0);
+    color: #f3f6ff;
+    margin-top: 15px;
+}
+
+.mint-page .mint-page-panel img {
+    clip-path: polygon(0 4%, 0 100%, 96% 100%, 100% 96%, 100% 0, 4% 0);
+    max-width: 372px;
+}
+
+.mint-page .mint-page-panel h3 {
+    margin-top: 24px;
+    margin-bottom: 0;
+    font-family: 'Press Start 2P';
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.mint-page .mint-page-panel p {
+    font-size: 1rem;
+    font-family: 'Blinker';
+    line-height: 19px;
+}
+
+.mint-page .mint-page-panel .btn-group {
+    background: url(../img/mintbtn-bg.png) no-repeat;
+    background-size: 100% 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.mint-page .mint-page-panel .btn-group .left, .mint-page .mint-page-panel .btn-group .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 58px;
+    border: none;
+}
+
+.mint-page .mint-page-panel .btn-group .left {
+    border-right: 1.5px solid rgba(231, 233, 255, 0.3);
+}
+
+.mint-page .mint-page-panel .btn-group .left:hover path {
+    transition: all 0.3s ease;
+    stroke: #f3f6ff67;
+}
+
+.mint-page .mint-page-panel .btn-group .right {
+    border-left: 1.5px solid rgba(231, 233, 255, 0.3);
+}
+
+.mint-page .mint-page-panel .btn-group .right:hover path {
+    transition: all 0.3s ease;
+    stroke: #f3f6ff67;
+}
+
+.mint-page .mint-page-panel .mint-btn {
+    margin-top: 10px;
+    background-color: #131314;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Press Start 2P";
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f3f6ff;
+    -webkit-clip-path: polygon(0 12px, 0 100%, 360px 100%, 100% 44px, 100% 0, 12px 0);
+    clip-path: polygon(0 12px, 0 100%, 360px 100%, 100% 44px, 100% 0, 12px 0);
+    transition: all 0.3s ease-in-out;
+}
+
+.mint-page .mint-page-panel .mint-btn:hover {
+    color: #f3f6ff3b;
+}
+
+
+
+
+@media (max-width: 450px) {
+    header .left-bar,
+    header .right-bar {
+      display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+    .logo-header {
+        margin-bottom: 10px;
+    }
+
+    header .left-bar,
+    header .right-bar {
+      zoom: 0.4;
+    }
+    header .logo {
+      zoom: 0.8;
+    }
+
+    .mint-page .mint-page-panel {
+        max-width: 340px;
+        zoom: 0.8;
+    }
+    .mint-page .mint-page-panel h3 {
+        font-size: 17px;
+    }
+    .mint-page .mint-page-panel .mint-btn {
+        clip-path: polygon(0 12px, 0 100%, 328px 100%, 100% 44px, 100% 0, 12px 0);
+    }
+    .connect-wallet {
+        width: 100%;
+        padding: 0 15px;
+        display: flex;
+        justify-content: center;
+    }
+    header .mint-btn {
+        width: 100%;
+        position: initial;
+    }
+
+}
+
+@media (max-width: 1191px) {
+    header {
+        padding: 0 20px;
+    }
+    header .logo {
+      margin: auto;
+    }
+}
